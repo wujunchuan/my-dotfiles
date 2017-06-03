@@ -16,7 +16,6 @@ autoload -U compinit && compinit
 # 让bash优先搜索/usr/local下的指令，而且不会覆盖老文件，比较安全
 # 搭配homebrew实用
 export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
-export HOMEBREW_GITHUB_API_TOKEN="8df2192f9ba9449d4d53cc33bf15929d5ee05864"
 # java path
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export PATH=${JAVA_HOME}/bin:$PATH
@@ -59,7 +58,7 @@ ZSH_THEME="ys"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -152,9 +151,13 @@ alias nvimc="vi /Users/wujunchuan/.config/nvim/init.vim"
 alias cdplug='cd /Users/wujunchuan/.local/share/nvim/plugged'
 #快速打开.zsh的配置文件
 alias zshc="vi /Users/wujunchuan/.zshc"
+#打开dotfiles的位置
+alias mydot='cd ~/dotfiles'
 #qshell
 alias qiniu="qshell qupload"
 alias qiniud="cd /Users/wujunchuan/qshell/"
+#clear zsh history
+alias clear_history='echo "" > ~/.zsh_history & exec $SHELL -l'
 export NVM_DIR="/Users/wujunchuan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -r $NVM_DIR/bash_completion  ]] && . $NVM_DIR/bash_completion # This is for Bash completion
