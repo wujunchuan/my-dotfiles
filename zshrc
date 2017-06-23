@@ -150,7 +150,7 @@ alias nvimc="vi /Users/wujunchuan/.config/nvim/init.vim"
 #打开Neovim插件的位置
 alias cdplug='cd /Users/wujunchuan/.local/share/nvim/plugged'
 #快速打开.zsh的配置文件
-alias zshc="vi /Users/wujunchuan/.zshc"
+alias zshc="vi /Users/wujunchuan/.zshrc"
 #打开dotfiles的位置
 alias mydot='cd ~/dotfiles'
 #qshell
@@ -158,6 +158,9 @@ alias qiniu="qshell qupload"
 alias qiniud="cd /Users/wujunchuan/qshell/"
 #clear zsh history
 alias clear_history='echo "" > ~/.zsh_history & exec $SHELL -l'
+# 复制上一条命令
+alias cplast='fc -ln -1 | pbcopy'
+
 export NVM_DIR="/Users/wujunchuan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -r $NVM_DIR/bash_completion  ]] && . $NVM_DIR/bash_completion # This is for Bash completion
