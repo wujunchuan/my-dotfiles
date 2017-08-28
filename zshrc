@@ -32,9 +32,12 @@ export ZSH=$HOME/.oh-my-zsh
 export ANDROID_HOME=/Users/wujunchuan/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+# useful script
+export PATH=/Users/wujunchuan/bin/useful-scripts:${PATH}
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded. # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="ys"
+#ZSH_THEME="ys"
+ZSH_THEME="Spaceship"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -164,3 +167,9 @@ alias cplast='fc -ln -1 | pbcopy'
 export NVM_DIR="/Users/wujunchuan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -r $NVM_DIR/bash_completion  ]] && . $NVM_DIR/bash_completion # This is for Bash completion
+
+#打开VSC编辑器
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+
+source "/Users/wujunchuan/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
