@@ -285,6 +285,7 @@
             },
             "devices": [
                 {
+                    "myname": "hhkb",
                     "disable_built_in_keyboard_if_exists": false,
                     "fn_function_keys": {},
                     "identifiers": {
@@ -295,11 +296,11 @@
                     },
                     "ignore": false,
                     "simple_modifications": {
-                      "caps_lock": "left_control",
-                      "left_control": "escape"
+                      "caps_lock": "left_control"
                     }
                 },
                 {
+                    "myname": "build in",
                     "disable_built_in_keyboard_if_exists": false,
                     "fn_function_keys": {},
                     "identifiers": {
