@@ -132,7 +132,7 @@
                                     "key_code": "g",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_shift"
+                                            "right_option"
                                         ],
                                         "optional": [
                                             "caps_lock"
@@ -151,7 +151,7 @@
                                     "key_code": "w",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_shift"
+                                            "right_option"
                                         ],
                                         "optional": [
                                             "caps_lock"
@@ -170,7 +170,7 @@
                                     "key_code": "e",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_shift"
+                                            "right_option"
                                         ],
                                         "optional": [
                                             "caps_lock"
@@ -189,7 +189,7 @@
                                     "key_code": "m",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_shift"
+                                            "right_option"
                                         ],
                                         "optional": [
                                             "caps_lock"
@@ -208,7 +208,7 @@
                                     "key_code": "f",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_shift"
+                                            "right_option"
                                         ],
                                         "optional": [
                                             "caps_lock"
@@ -227,7 +227,7 @@
                                     "key_code": "s",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_shift"
+                                            "right_option"
                                         ],
                                         "optional": [
                                             "caps_lock"
@@ -246,7 +246,7 @@
                                     "key_code": "t",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_shift"
+                                            "right_option"
                                         ],
                                         "optional": [
                                             "caps_lock"
@@ -262,10 +262,29 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_option"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/System/Library/CoreServices/Finder.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "d",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_shift"
+                                            "right_option"
                                         ],
                                         "optional": [
                                             "caps_lock"
